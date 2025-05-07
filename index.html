@@ -1,44 +1,50 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ההורים שלנו</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Parents</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      direction: rtl;
-      background-color: #f4f6f8;
-      color: #333;
+      background-color: #f3fdf3;
+      color: #2e4e2e;
     }
     header {
-      background-color: #004b8d;
+      background-color: #2e7d32;
       color: white;
-      padding: 20px 40px;
+      padding: 20px;
       text-align: center;
     }
     nav {
-      background-color: #003366;
-      padding: 10px 40px;
+      background-color: #1b5e20;
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 5px 10px;
+      margin: 10px 15px;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
     .hero {
-      background-color: #cce0ff;
-      padding: 40px;
+      background-color: #a5d6a7;
+      padding: 40px 20px;
       text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-top: 20px;
     }
     .hero h2 {
       font-size: 2em;
@@ -48,90 +54,104 @@
       font-size: 1.2em;
     }
     .content {
-      padding: 40px;
+      padding: 30px 20px;
       max-width: 900px;
       margin: auto;
       background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      border-radius: 8px;
       margin-top: 20px;
     }
     .content h3 {
-      color: #004b8d;
+      color: #2e7d32;
+    }
+    .button {
+      display: inline-block;
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #388e3c;
     }
     footer {
-      background-color: #f0f0f0;
-      padding: 20px 40px;
+      background-color: #e8f5e9;
       text-align: center;
+      padding: 20px;
       font-size: 0.9em;
       margin-top: 40px;
     }
     .footer-links a {
       margin: 0 10px;
-      color: #004b8d;
+      color: #2e7d32;
       text-decoration: none;
     }
     .footer-links a:hover {
       text-decoration: underline;
     }
-    .button {
-      background-color: #0073e6;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .button:hover {
-      background-color: #005bb5;
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>ההורים שלנו</h1>
+  <h1>Our Parents</h1>
 </header>
 
 <nav>
-  <div>
-    <a href="#">בית</a>
-    <a href="#">אודות</a>
-    <a href="#">שירותים</a>
-    <a href="#">חדשות</a>
-    <a href="#">בלוג</a>
-    <a href="#">צור קשר</a>
-  </div>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">News</a>
+  <a href="#">Blog</a>
+  <a href="#">Contact</a>
 </nav>
 
 <section class="hero">
-  <h2>שמירה על ההורים שלנו</h2>
-  <p>מודעות ומשאבים נגד התעללות בקשישים</p>
+  <h2>Protecting Our Seniors</h2>
+  <p>Awareness and resources against elder abuse</p>
+  <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=800&q=80" alt="Elderly man in wheelchair" />
 </section>
 
 <main class="content">
-  <h3>מודעות לטיפול בקשישים</h3>
-  <p>מידע ותמיכה לקשישים שזקוקים לכך</p>
+  <h3>Elder Care Awareness</h3>
+  <p>Information and support for seniors in need.</p>
 
-  <h3>הבנת התעללות בקשישים</h3>
-  <p><strong>25 במרץ, 2025</strong></p>
+  <h3>Understanding Elder Abuse</h3>
+  <p><strong>March 25, 2025</strong></p>
   <p>
-    התעללות בקשישים היא בעיה חמורה שיכולה להופיע בצורות רבות – התעללות פיזית, רגשית או כלכלית.
-    בפוסט זה נסקור את סוגי ההתעללות השונים, כיצד לזהות סימנים עדינים ולעזור להגן על אוכלוסיית הקשישים.
-    נשתף גם כלים ומשאבים שיסייעו לך לפעול, ליצור שינוי ולהבטיח לקשישים חיים בכבוד.
+    Elder abuse is a pressing issue that can take many forms—from physical and emotional mistreatment to financial exploitation. In this blog post, we explore the various manifestations of elder abuse, equipping you with the knowledge needed to recognize the subtle signs that often go unnoticed.
   </p>
-  <a href="#" class="button">קרא עוד</a>
+  <p>
+    By understanding these indicators, you can take proactive steps to protect vulnerable seniors in your community. We'll empower you with practical strategies and resources to help prevent elder abuse, ensuring that our elders live with dignity and respect.
+  </p>
+  <a href="#" class="button">Read More</a>
 </main>
 
 <footer>
   <div class="footer-links">
-    <a href="#">קביעת פגישה</a> |
-    <a href="#">טופס קליטה</a> |
-    <a href="#">שאלות נפוצות</a> |
-    <a href="#">משאבים</a> |
-    <a href="#">מדיניות פרטיות</a>
+    <a href="#">Schedule Appointment</a> |
+    <a href="#">Complete Intake</a> |
+    <a href="#">FAQ</a> |
+    <a href="#">Resources</a> |
+    <a href="#">Privacy Policy</a>
   </div>
-  <p>עיצוב אתר על ידי ❤️</p>
+  <p>Web design by ❤️</p>
 </footer>
 
 </body>
