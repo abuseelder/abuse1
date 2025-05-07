@@ -2,157 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Parents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Parents - Home</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f3fdf3;
-      color: #2e4e2e;
+      font-family: Arial, sans-serif;
+      background: #e9f5e9;
+      color: #333;
     }
+
     header {
       background-color: #2e7d32;
       color: white;
-      padding: 20px;
+      padding: 1rem;
       text-align: center;
-    }
-    nav {
-      background-color: #1b5e20;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 10px 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background-color: #a5d6a7;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      margin-top: 20px;
-    }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .content {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.08);
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-    .content h3 {
-      color: #2e7d32;
-    }
-    .button {
-      display: inline-block;
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 20px;
-      margin-top: 15px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .button:hover {
-      background-color: #388e3c;
-    }
-    footer {
-      background-color: #e8f5e9;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      margin-top: 40px;
-    }
-    .footer-links a {
-      margin: 0 10px;
-      color: #2e7d32;
-      text-decoration: none;
-    }
-    .footer-links a:hover {
-      text-decoration: underline;
     }
 
-    /* Responsive */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #388e3c;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #2e7d32;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      color: #2e7d32;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    .blog-preview {
+      background: white;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      max-width: 800px;
+      border-left: 5px solid #66bb6a;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .blog-preview img {
+      max-width: 180px;
+      border-radius: 6px;
+    }
+
+    .blog-preview div {
+      flex: 1;
+    }
+
+    .blog-preview h2 {
+      margin: 0;
+      color: #2e7d32;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
-        align-items: center;
       }
-      .hero h2 {
-        font-size: 1.5em;
+
+      .blog-preview {
+        flex-direction: column;
+        text-align: center;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Our Parents</h1>
+    <p>Awareness and resources against abuse</p>
+  </header>
 
-<header>
-  <h1>Our Parents</h1>
-</header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">News</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">News</a>
-  <a href="#">Blog</a>
-  <a href="#">Contact</a>
-</nav>
+  <section class="hero">
+    <h1>Protecting our seniors</h1>
+    <p>Information and support for seniors in need</p>
+  </section>
 
-<section class="hero">
-  <h2>Protecting Our Seniors</h2>
-  <p>Awareness and resources against elder abuse</p>
-  <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?fit=crop&w=800&q=80" alt="Elderly man in wheelchair" />
-</section>
+  <section class="blog-preview">
+    <img src="https://cdn.b12.io/client_media/QVGGGwFO/36fa3cb8-0961-11f0-be95-0242ac110002-jpg-hero_image.jpeg" alt="Elderly in wheelchair">
+    <div>
+      <h2><a href="understanding-elder-abuse.html" style="color: #2e7d32; text-decoration: none;">Understanding elder abuse</a></h2>
+      <p><em>March 25, 2025</em> by ההורים שלנו</p>
+      <p>Elder abuse remains a critical issue that affects millions of older adults, often occurring behind closed doors where signs can go unnoticed...</p>
+      <a href="understanding-elder-abuse.html" style="color: #2e7d32;">Read more</a>
+    </div>
+  </section>
 
-<main class="content">
-  <h3>Elder Care Awareness</h3>
-  <p>Information and support for seniors in need.</p>
-
-  <h3>Understanding Elder Abuse</h3>
-  <p><strong>March 25, 2025</strong></p>
-  <p>
-    Elder abuse is a pressing issue that can take many forms—from physical and emotional mistreatment to financial exploitation. In this blog post, we explore the various manifestations of elder abuse, equipping you with the knowledge needed to recognize the subtle signs that often go unnoticed.
-  </p>
-  <p>
-    By understanding these indicators, you can take proactive steps to protect vulnerable seniors in your community. We'll empower you with practical strategies and resources to help prevent elder abuse, ensuring that our elders live with dignity and respect.
-  </p>
-  <a href="#" class="button">Read More</a>
-</main>
-
-<footer>
-  <div class="footer-links">
-    <a href="#">Schedule Appointment</a> |
-    <a href="#">Complete Intake</a> |
-    <a href="#">FAQ</a> |
-    <a href="#">Resources</a> |
-    <a href="#">Privacy Policy</a>
-  </div>
-  <p>Web design by ❤️</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Our Parents. All rights reserved.</p>
+  </footer>
 </body>
 </html>
